@@ -33,12 +33,23 @@ namespace NadhamniCSharp
         }
 
 
-         SignUpChild f1;
+        SignUpChild   f1;
+        SignUp.SignUpParent f2;
+        SignUpPartner f3;
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            f1 = new SignUpChild();
-            f1.Show();
+            if (SignUp_Status_Single.Checked==false)
+            {
+                SignUpPartner f3 = new SignUpPartner();
+                this.Hide();
+                f3.Show();
+            }
+            else
+            {
+                SignUp.SignUpParent f2 = new SignUp.SignUpParent();
+                this.Hide();
+                f2.Show();
+            }
 
         }
 
