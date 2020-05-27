@@ -108,10 +108,12 @@
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.SignUp_Cancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.SignUp_Next = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -135,6 +137,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.SignUp_AdressA);
             this.bunifuGradientPanel1.Controls.Add(this.SignUp_AdressZIP);
             this.bunifuGradientPanel1.Controls.Add(this.SignUp_Picture);
@@ -151,12 +154,8 @@
             this.bunifuGradientPanel1.Controls.Add(this.label4);
             this.bunifuGradientPanel1.Controls.Add(this.SignUp_Hide);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.SignUp_GenderF);
-            this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.SignUp_Close);
-            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel1.Controls.Add(this.SignUp_GenderM);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel11);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
@@ -803,7 +802,7 @@
             // 
             this.SignUp_Status_Married.BackColor = System.Drawing.Color.Transparent;
             this.SignUp_Status_Married.Checked = false;
-            this.SignUp_Status_Married.Location = new System.Drawing.Point(753, 471);
+            this.SignUp_Status_Married.Location = new System.Drawing.Point(747, 475);
             this.SignUp_Status_Married.Name = "SignUp_Status_Married";
             this.SignUp_Status_Married.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.SignUp_Status_Married.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -814,8 +813,8 @@
             // SignUp_Status_Single
             // 
             this.SignUp_Status_Single.BackColor = System.Drawing.Color.Transparent;
-            this.SignUp_Status_Single.Checked = false;
-            this.SignUp_Status_Single.Location = new System.Drawing.Point(555, 471);
+            this.SignUp_Status_Single.Checked = true;
+            this.SignUp_Status_Single.Location = new System.Drawing.Point(549, 475);
             this.SignUp_Status_Single.Name = "SignUp_Status_Single";
             this.SignUp_Status_Single.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.SignUp_Status_Single.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -829,7 +828,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(788, 474);
+            this.label4.Location = new System.Drawing.Point(782, 478);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 105;
@@ -854,7 +853,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(604, 474);
+            this.label3.Location = new System.Drawing.Point(598, 478);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 104;
@@ -864,7 +863,7 @@
             // 
             this.SignUp_GenderF.BackColor = System.Drawing.Color.Transparent;
             this.SignUp_GenderF.Checked = false;
-            this.SignUp_GenderF.Location = new System.Drawing.Point(753, 317);
+            this.SignUp_GenderF.Location = new System.Drawing.Point(239, 7);
             this.SignUp_GenderF.Name = "SignUp_GenderF";
             this.SignUp_GenderF.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.SignUp_GenderF.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -878,7 +877,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(789, 321);
+            this.label2.Location = new System.Drawing.Point(275, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 16);
             this.label2.TabIndex = 103;
@@ -903,7 +902,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(600, 321);
+            this.label1.Location = new System.Drawing.Point(86, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 102;
@@ -925,7 +924,7 @@
             // 
             this.SignUp_GenderM.BackColor = System.Drawing.Color.Transparent;
             this.SignUp_GenderM.Checked = true;
-            this.SignUp_GenderM.Location = new System.Drawing.Point(555, 317);
+            this.SignUp_GenderM.Location = new System.Drawing.Point(41, 7);
             this.SignUp_GenderM.Name = "SignUp_GenderM";
             this.SignUp_GenderM.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.SignUp_GenderM.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -1217,8 +1216,9 @@
             this.SignUp_Next.CustomizableEdges = borderEdges1;
             this.SignUp_Next.DialogResult = System.Windows.Forms.DialogResult.None;
             this.SignUp_Next.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.SignUp_Next.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.SignUp_Next.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.SignUp_Next.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SignUp_Next.DisabledForecolor = System.Drawing.Color.Transparent;
+            this.SignUp_Next.Enabled = false;
             this.SignUp_Next.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.SignUp_Next.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
             this.SignUp_Next.ForeColor = System.Drawing.Color.White;
@@ -1260,6 +1260,18 @@
             this.SignUp_Next.UseDefaultRadiusAndThickness = true;
             this.SignUp_Next.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.SignUp_GenderM);
+            this.panel1.Controls.Add(this.SignUp_GenderF);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(508, 321);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(400, 35);
+            this.panel1.TabIndex = 118;
+            // 
             // Signup1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1279,6 +1291,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1325,5 +1339,6 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox SignUp_Username;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox SignUp_Password;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
