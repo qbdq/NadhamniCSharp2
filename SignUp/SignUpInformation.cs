@@ -46,5 +46,17 @@ namespace NadhamniCSharp
         {
 
         }
+
+        private void SignUp_Hide_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm f1 = new LoginForm();
+            f1.Show();
+        }
+
+        private void SignUp_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

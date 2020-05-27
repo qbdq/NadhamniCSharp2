@@ -305,7 +305,7 @@ namespace NadhamniCSharp
             this.SignUpButton.Size = new System.Drawing.Size(48, 15);
             this.SignUpButton.TabIndex = 5;
             this.SignUpButton.Text = "Sign Up";
-            this.SignUpButton.Click += new System.EventHandler(this.bunifuCustomLabel5_Click);
+            this.SignUpButton.Click += new System.EventHandler(this.SinUpButton_Click);
             // 
             // ForgetPassword
             // 
@@ -355,7 +355,7 @@ namespace NadhamniCSharp
             this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginButton.Textcolor = System.Drawing.Color.White;
             this.LoginButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // bunifuLabel3
             // 
@@ -385,6 +385,7 @@ namespace NadhamniCSharp
             this.LoginClose.TabIndex = 8;
             this.LoginClose.TabStop = false;
             this.LoginClose.Zoom = 10;
+            this.LoginClose.Click += new System.EventHandler(this.LoginClose_Click);
             // 
             // LoginHide
             // 
@@ -398,6 +399,7 @@ namespace NadhamniCSharp
             this.LoginHide.TabIndex = 8;
             this.LoginHide.TabStop = false;
             this.LoginHide.Zoom = 10;
+            this.LoginHide.Click += new System.EventHandler(this.LoginHide_Click);
             // 
             // LoginForm
             // 

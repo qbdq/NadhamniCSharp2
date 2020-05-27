@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Nadhamni" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-VEFPLGG\SQLEXPRESS;Initial Catalog=Nadhamni;Integrated Security=True" SettingsObjectName="NadhamniCSharp.Properties.Settings" SettingsPropertyName="NadhamniConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Adresse" Member="Adresse">
+    <Type Name="Adresse">
+      <Column Name="Adresseid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdresseNumero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdresseRue" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AdresseZip" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Adresse_User" Member="User" ThisKey="Adresseid" OtherKey="Adresseid" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Child" Member="Child">
+    <Type Name="Child">
+      <Column Name="ChildId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ChildName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChildDob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ChildEducation" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChildEducationLevel" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChildSchool" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChildDistance" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ChildPhoto" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="UserLogin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="User_Child" Member="User" ThisKey="UserLogin" OtherKey="Login" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Parent" Member="Parent">
+    <Type Name="Parent">
+      <Column Name="ParentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentDob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ParentHealth" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentIlness" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentGender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentPhoto" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="UserLogin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Parent" Member="User" ThisKey="UserLogin" OtherKey="Login" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Partner" Member="Partner">
+    <Type Name="Partner">
+      <Column Name="PartnerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PartnerName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerDob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerHealth" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerIlness" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerJob" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerGender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerPhoto" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="UserLogin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Partner" Member="User" ThisKey="UserLogin" OtherKey="Login" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TASK" Member="TASK">
+    <Type Name="TASK">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaskName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskStartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TaskEndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TaskLocation" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskSpecialEvent" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskDetails" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UserLogin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="User_TASK" Member="User" ThisKey="UserLogin" OtherKey="Login" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User">
+    <Type Name="User">
+      <Column Name="Login" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Dob" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhotoProfile" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Job" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Adresseid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreEnfant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_Child" Member="Child" ThisKey="Login" OtherKey="UserLogin" Type="Child" />
+      <Association Name="User_Parent" Member="Parent" ThisKey="Login" OtherKey="UserLogin" Type="Parent" />
+      <Association Name="User_Partner" Member="Partner" ThisKey="Login" OtherKey="UserLogin" Type="Partner" />
+      <Association Name="User_TASK" Member="TASK" ThisKey="Login" OtherKey="UserLogin" Type="TASK" />
+      <Association Name="Adresse_User" Member="Adresse" ThisKey="Adresseid" OtherKey="Adresseid" Type="Adresse" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

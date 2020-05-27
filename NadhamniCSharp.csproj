@@ -136,6 +136,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
@@ -155,6 +156,11 @@
     </Compile>
     <Compile Include="All App\Task.Designer.cs">
       <DependentUpon>Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
     <Compile Include="Login\LoginForm.cs">
       <SubType>Form</SubType>
@@ -318,6 +324,14 @@
     <EmbeddedResource Include="UserControl pages\Profile\ProfileProfile.resx">
       <DependentUpon>ProfileProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -528,6 +542,9 @@
     <Content Include="DDL files\Bunifu.UI.WinForms.BunifuUserControl.dll" />
     <Content Include="DDL files\Bunifu.UI.WinForms.ToggleSwitch.dll" />
     <Content Include="DDL files\Bunifu_UI_v1.5.3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
