@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NadhamniCSharp.All_App
 {
-    public partial class UserControl1 : UserControl
+    public partial class Task_Location : UserControl
     {
-        public UserControl1()
+        public Task_Location()
         {
             InitializeComponent();
         }
