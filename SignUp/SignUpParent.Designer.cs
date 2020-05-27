@@ -42,10 +42,10 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Parent_Next = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Parent_Illness = new Bunifu.Framework.UI.BunifuDropdown();
             this.Parent_Health = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Parent_Cancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Parent_Picture = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.Parent_Username = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.Parent_DOB = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -60,8 +60,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.SignUp_ImportImage = new System.Windows.Forms.Button();
+            this.SignUp_Hide = new Bunifu.Framework.UI.BunifuImageButton();
+            this.SignUp_Close = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Parent_Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -73,10 +78,13 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_Hide);
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_Close);
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_ImportImage);
+            this.bunifuGradientPanel1.Controls.Add(this.Parent_Next);
             this.bunifuGradientPanel1.Controls.Add(this.Parent_Illness);
             this.bunifuGradientPanel1.Controls.Add(this.Parent_Health);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuButton2);
+            this.bunifuGradientPanel1.Controls.Add(this.Parent_Cancel);
             this.bunifuGradientPanel1.Controls.Add(this.Parent_Picture);
             this.bunifuGradientPanel1.Controls.Add(this.Parent_Username);
             this.bunifuGradientPanel1.Controls.Add(this.Parent_DOB);
@@ -102,45 +110,45 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(594, 637);
             this.bunifuGradientPanel1.TabIndex = 77;
             // 
-            // bunifuButton1
+            // Parent_Next
             // 
-            this.bunifuButton1.AllowToggling = false;
-            this.bunifuButton1.AnimationSpeed = 200;
-            this.bunifuButton1.AutoGenerateColors = false;
-            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.ButtonText = "Next";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
-            this.bunifuButton1.ColorContrastOnClick = 45;
-            this.bunifuButton1.ColorContrastOnHover = 45;
-            this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Next.AllowToggling = false;
+            this.Parent_Next.AnimationSpeed = 200;
+            this.Parent_Next.AutoGenerateColors = false;
+            this.Parent_Next.BackColor = System.Drawing.Color.Transparent;
+            this.Parent_Next.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Parent_Next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Parent_Next.BackgroundImage")));
+            this.Parent_Next.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Parent_Next.ButtonText = "Next";
+            this.Parent_Next.ButtonTextMarginLeft = 0;
+            this.Parent_Next.ColorContrastOnClick = 45;
+            this.Parent_Next.ColorContrastOnHover = 45;
+            this.Parent_Next.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
-            this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.bunifuButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuButton1.IconMarginLeft = 11;
-            this.bunifuButton1.IconPadding = 10;
-            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.Gainsboro;
-            this.bunifuButton1.IdleBorderRadius = 3;
-            this.bunifuButton1.IdleBorderThickness = 1;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.bunifuButton1.IdleIconLeftImage = null;
-            this.bunifuButton1.IdleIconRightImage = null;
-            this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(304, 591);
-            this.bunifuButton1.Name = "bunifuButton1";
+            this.Parent_Next.CustomizableEdges = borderEdges1;
+            this.Parent_Next.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Parent_Next.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.Parent_Next.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Parent_Next.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Parent_Next.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Parent_Next.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Parent_Next.ForeColor = System.Drawing.Color.White;
+            this.Parent_Next.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Next.IconMarginLeft = 11;
+            this.Parent_Next.IconPadding = 10;
+            this.Parent_Next.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Next.IdleBorderColor = System.Drawing.Color.Gainsboro;
+            this.Parent_Next.IdleBorderRadius = 3;
+            this.Parent_Next.IdleBorderThickness = 1;
+            this.Parent_Next.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Parent_Next.IdleIconLeftImage = null;
+            this.Parent_Next.IdleIconRightImage = null;
+            this.Parent_Next.IndicateFocus = false;
+            this.Parent_Next.Location = new System.Drawing.Point(304, 591);
+            this.Parent_Next.Name = "Parent_Next";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
             stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -149,7 +157,7 @@
             stateProperties1.ForeColor = System.Drawing.Color.White;
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties1;
+            this.Parent_Next.onHoverState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties2.BorderRadius = 3;
             stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -158,13 +166,13 @@
             stateProperties2.ForeColor = System.Drawing.Color.White;
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
-            this.bunifuButton1.OnPressedState = stateProperties2;
-            this.bunifuButton1.Size = new System.Drawing.Size(89, 35);
-            this.bunifuButton1.TabIndex = 107;
-            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.TextMarginLeft = 0;
-            this.bunifuButton1.UseDefaultRadiusAndThickness = true;
-            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
+            this.Parent_Next.OnPressedState = stateProperties2;
+            this.Parent_Next.Size = new System.Drawing.Size(89, 35);
+            this.Parent_Next.TabIndex = 107;
+            this.Parent_Next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Parent_Next.TextMarginLeft = 0;
+            this.Parent_Next.UseDefaultRadiusAndThickness = true;
+            this.Parent_Next.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // Parent_Illness
             // 
@@ -172,12 +180,26 @@
             this.Parent_Illness.BorderRadius = 3;
             this.Parent_Illness.DisabledColor = System.Drawing.Color.Gray;
             this.Parent_Illness.ForeColor = System.Drawing.Color.White;
-            this.Parent_Illness.items = new string[0];
+            this.Parent_Illness.items = new string[] {
+        "Alzheimer disease and dementia",
+        "Arthritis",
+        "Asthma",
+        "Cancer",
+        "COPD",
+        "Crohn disease",
+        "Cystic fibrosis",
+        "Diabetes",
+        "Epilepsy",
+        "Heart disease",
+        "HIV/AIDS",
+        "Mood disorders (bipolar, cyclothymic, and depression)",
+        "Multiple sclerosis",
+        "Parkinson disease"};
             this.Parent_Illness.Location = new System.Drawing.Point(49, 287);
             this.Parent_Illness.Name = "Parent_Illness";
             this.Parent_Illness.NomalColor = System.Drawing.Color.Salmon;
             this.Parent_Illness.onHoverColor = System.Drawing.Color.Salmon;
-            this.Parent_Illness.selectedIndex = -1;
+            this.Parent_Illness.selectedIndex = 0;
             this.Parent_Illness.Size = new System.Drawing.Size(265, 25);
             this.Parent_Illness.TabIndex = 86;
             // 
@@ -187,54 +209,57 @@
             this.Parent_Health.BorderRadius = 3;
             this.Parent_Health.DisabledColor = System.Drawing.Color.Gray;
             this.Parent_Health.ForeColor = System.Drawing.Color.White;
-            this.Parent_Health.items = new string[0];
+            this.Parent_Health.items = new string[] {
+        "Select A Health Condition",
+        "Healthy",
+        "chronic disease"};
             this.Parent_Health.Location = new System.Drawing.Point(49, 227);
             this.Parent_Health.Name = "Parent_Health";
             this.Parent_Health.NomalColor = System.Drawing.Color.Salmon;
             this.Parent_Health.onHoverColor = System.Drawing.Color.Salmon;
-            this.Parent_Health.selectedIndex = -1;
+            this.Parent_Health.selectedIndex = 0;
             this.Parent_Health.Size = new System.Drawing.Size(265, 25);
             this.Parent_Health.TabIndex = 86;
             // 
-            // bunifuButton2
+            // Parent_Cancel
             // 
-            this.bunifuButton2.AllowToggling = false;
-            this.bunifuButton2.AnimationSpeed = 200;
-            this.bunifuButton2.AutoGenerateColors = false;
-            this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
-            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.ButtonText = "Cancel";
-            this.bunifuButton2.ButtonTextMarginLeft = 0;
-            this.bunifuButton2.ColorContrastOnClick = 45;
-            this.bunifuButton2.ColorContrastOnHover = 45;
-            this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Cancel.AllowToggling = false;
+            this.Parent_Cancel.AnimationSpeed = 200;
+            this.Parent_Cancel.AutoGenerateColors = false;
+            this.Parent_Cancel.BackColor = System.Drawing.Color.Transparent;
+            this.Parent_Cancel.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Parent_Cancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Parent_Cancel.BackgroundImage")));
+            this.Parent_Cancel.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Parent_Cancel.ButtonText = "Cancel";
+            this.Parent_Cancel.ButtonTextMarginLeft = 0;
+            this.Parent_Cancel.ColorContrastOnClick = 45;
+            this.Parent_Cancel.ColorContrastOnHover = 45;
+            this.Parent_Cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges2;
-            this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.bunifuButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuButton2.IconMarginLeft = 11;
-            this.bunifuButton2.IconPadding = 10;
-            this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuButton2.IdleBorderColor = System.Drawing.Color.Gainsboro;
-            this.bunifuButton2.IdleBorderRadius = 3;
-            this.bunifuButton2.IdleBorderThickness = 1;
-            this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.bunifuButton2.IdleIconLeftImage = null;
-            this.bunifuButton2.IdleIconRightImage = null;
-            this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(174, 591);
-            this.bunifuButton2.Name = "bunifuButton2";
+            this.Parent_Cancel.CustomizableEdges = borderEdges2;
+            this.Parent_Cancel.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Parent_Cancel.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.Parent_Cancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Parent_Cancel.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Parent_Cancel.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Parent_Cancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Parent_Cancel.ForeColor = System.Drawing.Color.White;
+            this.Parent_Cancel.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Cancel.IconMarginLeft = 11;
+            this.Parent_Cancel.IconPadding = 10;
+            this.Parent_Cancel.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Parent_Cancel.IdleBorderColor = System.Drawing.Color.Gainsboro;
+            this.Parent_Cancel.IdleBorderRadius = 3;
+            this.Parent_Cancel.IdleBorderThickness = 1;
+            this.Parent_Cancel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Parent_Cancel.IdleIconLeftImage = null;
+            this.Parent_Cancel.IdleIconRightImage = null;
+            this.Parent_Cancel.IndicateFocus = false;
+            this.Parent_Cancel.Location = new System.Drawing.Point(174, 591);
+            this.Parent_Cancel.Name = "Parent_Cancel";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -243,7 +268,7 @@
             stateProperties3.ForeColor = System.Drawing.Color.White;
             stateProperties3.IconLeftImage = null;
             stateProperties3.IconRightImage = null;
-            this.bunifuButton2.onHoverState = stateProperties3;
+            this.Parent_Cancel.onHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties4.BorderRadius = 3;
             stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -252,12 +277,13 @@
             stateProperties4.ForeColor = System.Drawing.Color.White;
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
-            this.bunifuButton2.OnPressedState = stateProperties4;
-            this.bunifuButton2.Size = new System.Drawing.Size(89, 35);
-            this.bunifuButton2.TabIndex = 106;
-            this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton2.TextMarginLeft = 0;
-            this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.Parent_Cancel.OnPressedState = stateProperties4;
+            this.Parent_Cancel.Size = new System.Drawing.Size(89, 35);
+            this.Parent_Cancel.TabIndex = 106;
+            this.Parent_Cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Parent_Cancel.TextMarginLeft = 0;
+            this.Parent_Cancel.UseDefaultRadiusAndThickness = true;
+            this.Parent_Cancel.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
             // Parent_Picture
             // 
@@ -269,7 +295,7 @@
             this.Parent_Picture.Location = new System.Drawing.Point(422, 72);
             this.Parent_Picture.Name = "Parent_Picture";
             this.Parent_Picture.Size = new System.Drawing.Size(99, 99);
-            this.Parent_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Parent_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Parent_Picture.TabIndex = 50;
             this.Parent_Picture.TabStop = false;
             this.Parent_Picture.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
@@ -364,7 +390,7 @@
             // 
             this.Parent_GenderF.BackColor = System.Drawing.Color.Transparent;
             this.Parent_GenderF.Checked = false;
-            this.Parent_GenderF.Location = new System.Drawing.Point(390, 290);
+            this.Parent_GenderF.Location = new System.Drawing.Point(383, 303);
             this.Parent_GenderF.Name = "Parent_GenderF";
             this.Parent_GenderF.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.Parent_GenderF.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -377,7 +403,7 @@
             // 
             this.Parent_GenderM.BackColor = System.Drawing.Color.Transparent;
             this.Parent_GenderM.Checked = true;
-            this.Parent_GenderM.Location = new System.Drawing.Point(390, 249);
+            this.Parent_GenderM.Location = new System.Drawing.Point(383, 262);
             this.Parent_GenderM.Name = "Parent_GenderM";
             this.Parent_GenderM.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.Parent_GenderM.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -392,7 +418,7 @@
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(386, 223);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(379, 236);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(59, 16);
             this.bunifuCustomLabel3.TabIndex = 85;
@@ -466,7 +492,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(490, 301);
+            this.label3.Location = new System.Drawing.Point(483, 314);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 103;
@@ -491,12 +517,52 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(490, 250);
+            this.label1.Location = new System.Drawing.Point(483, 263);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 102;
             this.label1.Text = "Male";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // SignUp_ImportImage
+            // 
+            this.SignUp_ImportImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.SignUp_ImportImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignUp_ImportImage.ForeColor = System.Drawing.Color.Snow;
+            this.SignUp_ImportImage.Location = new System.Drawing.Point(398, 181);
+            this.SignUp_ImportImage.Name = "SignUp_ImportImage";
+            this.SignUp_ImportImage.Size = new System.Drawing.Size(144, 35);
+            this.SignUp_ImportImage.TabIndex = 120;
+            this.SignUp_ImportImage.Text = "Import Image";
+            this.SignUp_ImportImage.UseVisualStyleBackColor = false;
+            this.SignUp_ImportImage.Click += new System.EventHandler(this.SignUp_ImportImage_Click);
+            // 
+            // SignUp_Hide
+            // 
+            this.SignUp_Hide.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp_Hide.Image = ((System.Drawing.Image)(resources.GetObject("SignUp_Hide.Image")));
+            this.SignUp_Hide.ImageActive = null;
+            this.SignUp_Hide.Location = new System.Drawing.Point(529, 4);
+            this.SignUp_Hide.Name = "SignUp_Hide";
+            this.SignUp_Hide.Size = new System.Drawing.Size(23, 25);
+            this.SignUp_Hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignUp_Hide.TabIndex = 121;
+            this.SignUp_Hide.TabStop = false;
+            this.SignUp_Hide.Zoom = 10;
+            // 
+            // SignUp_Close
+            // 
+            this.SignUp_Close.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp_Close.Image = ((System.Drawing.Image)(resources.GetObject("SignUp_Close.Image")));
+            this.SignUp_Close.ImageActive = null;
+            this.SignUp_Close.Location = new System.Drawing.Point(559, 3);
+            this.SignUp_Close.Name = "SignUp_Close";
+            this.SignUp_Close.Size = new System.Drawing.Size(23, 25);
+            this.SignUp_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignUp_Close.TabIndex = 122;
+            this.SignUp_Close.TabStop = false;
+            this.SignUp_Close.Zoom = 10;
+            this.SignUp_Close.Click += new System.EventHandler(this.SignUp_Close_Click);
             // 
             // SignUpParent
             // 
@@ -511,6 +577,8 @@
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Parent_Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,8 +587,8 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Parent_Next;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Parent_Cancel;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Parent_Username;
         private Bunifu.UI.WinForms.BunifuRadioButton Parent_GenderF;
         private Bunifu.UI.WinForms.BunifuRadioButton Parent_GenderM;
@@ -537,5 +605,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
         private Bunifu.UI.WinForms.BunifuPictureBox Parent_Picture;
+        private System.Windows.Forms.Button SignUp_ImportImage;
+        private Bunifu.Framework.UI.BunifuImageButton SignUp_Hide;
+        private Bunifu.Framework.UI.BunifuImageButton SignUp_Close;
     }
 }

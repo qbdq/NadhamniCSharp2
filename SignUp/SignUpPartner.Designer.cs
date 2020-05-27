@@ -42,7 +42,11 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.Partner_Next = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.SignUp_Hide = new Bunifu.Framework.UI.BunifuImageButton();
+            this.SignUp_Close = new Bunifu.Framework.UI.BunifuImageButton();
+            this.SignUp_ImportImage = new System.Windows.Forms.Button();
+            this.Partner_Job = new Bunifu.Framework.UI.BunifuDropdown();
+            this.Partner_Ajouter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Partner_Illness = new Bunifu.Framework.UI.BunifuDropdown();
             this.Partner_Health = new Bunifu.Framework.UI.BunifuDropdown();
             this.Partner_Cancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -60,8 +64,9 @@
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Partner_Job = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Partner_Picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,8 +79,11 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_Hide);
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_Close);
+            this.bunifuGradientPanel1.Controls.Add(this.SignUp_ImportImage);
             this.bunifuGradientPanel1.Controls.Add(this.Partner_Job);
-            this.bunifuGradientPanel1.Controls.Add(this.Partner_Next);
+            this.bunifuGradientPanel1.Controls.Add(this.Partner_Ajouter);
             this.bunifuGradientPanel1.Controls.Add(this.Partner_Illness);
             this.bunifuGradientPanel1.Controls.Add(this.Partner_Health);
             this.bunifuGradientPanel1.Controls.Add(this.Partner_Cancel);
@@ -104,45 +112,123 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(594, 637);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
-            // Partner_Next
+            // SignUp_Hide
             // 
-            this.Partner_Next.AllowToggling = false;
-            this.Partner_Next.AnimationSpeed = 200;
-            this.Partner_Next.AutoGenerateColors = false;
-            this.Partner_Next.BackColor = System.Drawing.Color.Transparent;
-            this.Partner_Next.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.Partner_Next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Partner_Next.BackgroundImage")));
-            this.Partner_Next.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Partner_Next.ButtonText = "Next";
-            this.Partner_Next.ButtonTextMarginLeft = 0;
-            this.Partner_Next.ColorContrastOnClick = 45;
-            this.Partner_Next.ColorContrastOnHover = 45;
-            this.Partner_Next.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUp_Hide.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp_Hide.Image = ((System.Drawing.Image)(resources.GetObject("SignUp_Hide.Image")));
+            this.SignUp_Hide.ImageActive = null;
+            this.SignUp_Hide.Location = new System.Drawing.Point(529, 4);
+            this.SignUp_Hide.Name = "SignUp_Hide";
+            this.SignUp_Hide.Size = new System.Drawing.Size(23, 25);
+            this.SignUp_Hide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignUp_Hide.TabIndex = 121;
+            this.SignUp_Hide.TabStop = false;
+            this.SignUp_Hide.Zoom = 10;
+            // 
+            // SignUp_Close
+            // 
+            this.SignUp_Close.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp_Close.Image = ((System.Drawing.Image)(resources.GetObject("SignUp_Close.Image")));
+            this.SignUp_Close.ImageActive = null;
+            this.SignUp_Close.Location = new System.Drawing.Point(559, 3);
+            this.SignUp_Close.Name = "SignUp_Close";
+            this.SignUp_Close.Size = new System.Drawing.Size(23, 25);
+            this.SignUp_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignUp_Close.TabIndex = 122;
+            this.SignUp_Close.TabStop = false;
+            this.SignUp_Close.Zoom = 10;
+            this.SignUp_Close.Click += new System.EventHandler(this.SignUp_Close_Click);
+            // 
+            // SignUp_ImportImage
+            // 
+            this.SignUp_ImportImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.SignUp_ImportImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignUp_ImportImage.ForeColor = System.Drawing.Color.Snow;
+            this.SignUp_ImportImage.Location = new System.Drawing.Point(408, 183);
+            this.SignUp_ImportImage.Name = "SignUp_ImportImage";
+            this.SignUp_ImportImage.Size = new System.Drawing.Size(144, 35);
+            this.SignUp_ImportImage.TabIndex = 120;
+            this.SignUp_ImportImage.Text = "Import Image";
+            this.SignUp_ImportImage.UseVisualStyleBackColor = false;
+            this.SignUp_ImportImage.Click += new System.EventHandler(this.SignUp_ImportImage_Click);
+            // 
+            // Partner_Job
+            // 
+            this.Partner_Job.BackColor = System.Drawing.Color.Transparent;
+            this.Partner_Job.BorderRadius = 3;
+            this.Partner_Job.DisabledColor = System.Drawing.Color.Gray;
+            this.Partner_Job.ForeColor = System.Drawing.Color.White;
+            this.Partner_Job.items = new string[] {
+        "Architecture and Engineering Occupations",
+        "Arts, Design, Entertainment, Sports, and Media Occupations",
+        "Building and Grounds Cleaning and Maintenance Occupations",
+        "Business and Financial Operations Occupations",
+        "Community and Social Services Occupations",
+        "Computer and Mathematical Occupations",
+        "Construction and Extraction Occupations",
+        "Education, Training, and Library Occupations",
+        "Farming, Fishing, and Forestry Occupations",
+        "Food Preparation and Serving Related Occupations",
+        "Healthcare Practitioners and Technical Occupations",
+        "Healthcare Support Occupations",
+        "Installation, Maintenance, and Repair Occupations",
+        "Legal Occupations",
+        "Life, Physical, and Social Science Occupations",
+        "Management Occupations",
+        "Military Specific Occupations",
+        "Office and Administrative Support Occupations",
+        "Personal Care and Service Occupations",
+        "Production Occupations",
+        "Protective Service Occupations",
+        "Sales and Related Occupations",
+        "Other"};
+            this.Partner_Job.Location = new System.Drawing.Point(49, 359);
+            this.Partner_Job.Name = "Partner_Job";
+            this.Partner_Job.NomalColor = System.Drawing.Color.Salmon;
+            this.Partner_Job.onHoverColor = System.Drawing.Color.Salmon;
+            this.Partner_Job.selectedIndex = -1;
+            this.Partner_Job.Size = new System.Drawing.Size(265, 25);
+            this.Partner_Job.TabIndex = 118;
+            // 
+            // Partner_Ajouter
+            // 
+            this.Partner_Ajouter.AllowToggling = false;
+            this.Partner_Ajouter.AnimationSpeed = 200;
+            this.Partner_Ajouter.AutoGenerateColors = false;
+            this.Partner_Ajouter.BackColor = System.Drawing.Color.Transparent;
+            this.Partner_Ajouter.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Partner_Ajouter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Partner_Ajouter.BackgroundImage")));
+            this.Partner_Ajouter.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Partner_Ajouter.ButtonText = "Ajouter";
+            this.Partner_Ajouter.ButtonTextMarginLeft = 0;
+            this.Partner_Ajouter.ColorContrastOnClick = 45;
+            this.Partner_Ajouter.ColorContrastOnHover = 45;
+            this.Partner_Ajouter.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.Partner_Next.CustomizableEdges = borderEdges1;
-            this.Partner_Next.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Partner_Next.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.Partner_Next.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Partner_Next.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Partner_Next.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Partner_Next.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.Partner_Next.ForeColor = System.Drawing.Color.White;
-            this.Partner_Next.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.Partner_Next.IconMarginLeft = 11;
-            this.Partner_Next.IconPadding = 10;
-            this.Partner_Next.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.Partner_Next.IdleBorderColor = System.Drawing.Color.Gainsboro;
-            this.Partner_Next.IdleBorderRadius = 3;
-            this.Partner_Next.IdleBorderThickness = 1;
-            this.Partner_Next.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
-            this.Partner_Next.IdleIconLeftImage = null;
-            this.Partner_Next.IdleIconRightImage = null;
-            this.Partner_Next.IndicateFocus = false;
-            this.Partner_Next.Location = new System.Drawing.Point(298, 594);
-            this.Partner_Next.Name = "Partner_Next";
+            this.Partner_Ajouter.CustomizableEdges = borderEdges1;
+            this.Partner_Ajouter.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Partner_Ajouter.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.Partner_Ajouter.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Partner_Ajouter.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Partner_Ajouter.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Partner_Ajouter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Partner_Ajouter.ForeColor = System.Drawing.Color.White;
+            this.Partner_Ajouter.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Partner_Ajouter.IconMarginLeft = 11;
+            this.Partner_Ajouter.IconPadding = 10;
+            this.Partner_Ajouter.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Partner_Ajouter.IdleBorderColor = System.Drawing.Color.Gainsboro;
+            this.Partner_Ajouter.IdleBorderRadius = 3;
+            this.Partner_Ajouter.IdleBorderThickness = 1;
+            this.Partner_Ajouter.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(79)))), ((int)(((byte)(95)))));
+            this.Partner_Ajouter.IdleIconLeftImage = null;
+            this.Partner_Ajouter.IdleIconRightImage = null;
+            this.Partner_Ajouter.IndicateFocus = false;
+            this.Partner_Ajouter.Location = new System.Drawing.Point(298, 594);
+            this.Partner_Ajouter.Name = "Partner_Ajouter";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
             stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -151,7 +237,7 @@
             stateProperties1.ForeColor = System.Drawing.Color.White;
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
-            this.Partner_Next.onHoverState = stateProperties1;
+            this.Partner_Ajouter.onHoverState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties2.BorderRadius = 3;
             stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -160,13 +246,13 @@
             stateProperties2.ForeColor = System.Drawing.Color.White;
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
-            this.Partner_Next.OnPressedState = stateProperties2;
-            this.Partner_Next.Size = new System.Drawing.Size(89, 35);
-            this.Partner_Next.TabIndex = 107;
-            this.Partner_Next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Partner_Next.TextMarginLeft = 0;
-            this.Partner_Next.UseDefaultRadiusAndThickness = true;
-            this.Partner_Next.Click += new System.EventHandler(this.bunifuButton1_Click);
+            this.Partner_Ajouter.OnPressedState = stateProperties2;
+            this.Partner_Ajouter.Size = new System.Drawing.Size(89, 35);
+            this.Partner_Ajouter.TabIndex = 107;
+            this.Partner_Ajouter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Partner_Ajouter.TextMarginLeft = 0;
+            this.Partner_Ajouter.UseDefaultRadiusAndThickness = true;
+            this.Partner_Ajouter.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // Partner_Illness
             // 
@@ -174,12 +260,26 @@
             this.Partner_Illness.BorderRadius = 3;
             this.Partner_Illness.DisabledColor = System.Drawing.Color.Gray;
             this.Partner_Illness.ForeColor = System.Drawing.Color.White;
-            this.Partner_Illness.items = new string[0];
+            this.Partner_Illness.items = new string[] {
+        "Alzheimer disease and dementia",
+        "Arthritis",
+        "Asthma",
+        "Cancer",
+        "COPD",
+        "Crohn disease",
+        "Cystic fibrosis",
+        "Diabetes",
+        "Epilepsy",
+        "Heart disease",
+        "HIV/AIDS",
+        "Mood disorders (bipolar, cyclothymic, and depression)",
+        "Multiple sclerosis",
+        "Parkinson disease"};
             this.Partner_Illness.Location = new System.Drawing.Point(49, 289);
             this.Partner_Illness.Name = "Partner_Illness";
             this.Partner_Illness.NomalColor = System.Drawing.Color.Salmon;
             this.Partner_Illness.onHoverColor = System.Drawing.Color.Salmon;
-            this.Partner_Illness.selectedIndex = -1;
+            this.Partner_Illness.selectedIndex = 0;
             this.Partner_Illness.Size = new System.Drawing.Size(265, 25);
             this.Partner_Illness.TabIndex = 86;
             // 
@@ -189,7 +289,10 @@
             this.Partner_Health.BorderRadius = 3;
             this.Partner_Health.DisabledColor = System.Drawing.Color.Gray;
             this.Partner_Health.ForeColor = System.Drawing.Color.White;
-            this.Partner_Health.items = new string[0];
+            this.Partner_Health.items = new string[] {
+        "Select A Health Condition",
+        "Healthy",
+        "chronic disease"};
             this.Partner_Health.Location = new System.Drawing.Point(49, 229);
             this.Partner_Health.Name = "Partner_Health";
             this.Partner_Health.NomalColor = System.Drawing.Color.Salmon;
@@ -260,6 +363,7 @@
             this.Partner_Cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Partner_Cancel.TextMarginLeft = 0;
             this.Partner_Cancel.UseDefaultRadiusAndThickness = true;
+            this.Partner_Cancel.Click += new System.EventHandler(this.Partner_Cancel_Click);
             // 
             // Partner_Picture
             // 
@@ -271,7 +375,7 @@
             this.Partner_Picture.Location = new System.Drawing.Point(433, 71);
             this.Partner_Picture.Name = "Partner_Picture";
             this.Partner_Picture.Size = new System.Drawing.Size(99, 99);
-            this.Partner_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Partner_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Partner_Picture.TabIndex = 50;
             this.Partner_Picture.TabStop = false;
             this.Partner_Picture.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
@@ -366,7 +470,7 @@
             // 
             this.Partner_GenderF.BackColor = System.Drawing.Color.Transparent;
             this.Partner_GenderF.Checked = false;
-            this.Partner_GenderF.Location = new System.Drawing.Point(394, 280);
+            this.Partner_GenderF.Location = new System.Drawing.Point(387, 316);
             this.Partner_GenderF.Name = "Partner_GenderF";
             this.Partner_GenderF.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.Partner_GenderF.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -378,7 +482,7 @@
             // 
             this.Partner_GenderM.BackColor = System.Drawing.Color.Transparent;
             this.Partner_GenderM.Checked = true;
-            this.Partner_GenderM.Location = new System.Drawing.Point(394, 235);
+            this.Partner_GenderM.Location = new System.Drawing.Point(387, 271);
             this.Partner_GenderM.Name = "Partner_GenderM";
             this.Partner_GenderM.OutlineColor = System.Drawing.Color.WhiteSmoke;
             this.Partner_GenderM.RadioColor = System.Drawing.SystemColors.MenuHighlight;
@@ -430,7 +534,7 @@
             this.bunifuCustomLabel11.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(391, 202);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(384, 238);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(59, 16);
             this.bunifuCustomLabel11.TabIndex = 85;
@@ -478,7 +582,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(494, 289);
+            this.label4.Location = new System.Drawing.Point(487, 325);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 103;
@@ -490,26 +594,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(494, 237);
+            this.label3.Location = new System.Drawing.Point(487, 273);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 102;
             this.label3.Text = "Male";
-            // 
-            // Partner_Job
-            // 
-            this.Partner_Job.BackColor = System.Drawing.Color.Transparent;
-            this.Partner_Job.BorderRadius = 3;
-            this.Partner_Job.DisabledColor = System.Drawing.Color.Gray;
-            this.Partner_Job.ForeColor = System.Drawing.Color.White;
-            this.Partner_Job.items = new string[0];
-            this.Partner_Job.Location = new System.Drawing.Point(49, 359);
-            this.Partner_Job.Name = "Partner_Job";
-            this.Partner_Job.NomalColor = System.Drawing.Color.Salmon;
-            this.Partner_Job.onHoverColor = System.Drawing.Color.Salmon;
-            this.Partner_Job.selectedIndex = -1;
-            this.Partner_Job.Size = new System.Drawing.Size(265, 25);
-            this.Partner_Job.TabIndex = 118;
             // 
             // SignUpPartner
             // 
@@ -523,6 +612,8 @@
             this.Text = "Form3";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Hide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignUp_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Partner_Picture)).EndInit();
             this.ResumeLayout(false);
 
@@ -534,7 +625,7 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuPictureBox Partner_Picture;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Partner_Next;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Partner_Ajouter;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Partner_Cancel;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Partner_Name;
         private Bunifu.UI.WinForms.BunifuRadioButton Partner_GenderF;
@@ -551,5 +642,8 @@
         private Bunifu.Framework.UI.BunifuDropdown Partner_Health;
         private Bunifu.Framework.UI.BunifuDropdown Partner_Illness;
         private Bunifu.Framework.UI.BunifuDropdown Partner_Job;
+        private System.Windows.Forms.Button SignUp_ImportImage;
+        private Bunifu.Framework.UI.BunifuImageButton SignUp_Hide;
+        private Bunifu.Framework.UI.BunifuImageButton SignUp_Close;
     }
 }

@@ -95,9 +95,12 @@ namespace NadhamniCSharp
             this.Hide();
         }
 
-        private Signup1 f3;
+        private SingupInformation f3;
         private void SinUpButton_Click(object sender, EventArgs e)
         {
+            SingupInformation f3 = new SingupInformation();
+            this.Hide();
+            f3.Show();
             
         }
     }
