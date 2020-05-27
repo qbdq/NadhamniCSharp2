@@ -77,15 +77,15 @@ namespace NadhamniCSharp
         private void button1_Click(object sender, EventArgs e)
         {
             HomePanel.Controls.Clear();
-            SidePanel.Height = HomeButton.Height;
-            SidePanel.Location = HomeButton.Location;
+            SidePanel.Height = HomePage_Home.Height;
+            SidePanel.Location = HomePage_Home.Location;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             HomePanel.Controls.Clear();
-            SidePanel.Height = ProfileButton.Height;
-            SidePanel.Location = ProfileButton.Location;
+            SidePanel.Height = HomePage_Profile.Height;
+            SidePanel.Location = HomePage_Profile.Location;
             if (!HomePanel.Controls.Contains(Profile.Instance))
             {
                 HomePanel.Controls.Clear();
@@ -98,16 +98,16 @@ namespace NadhamniCSharp
         private void button2_Click(object sender, EventArgs e)
         {
             HomePanel.Controls.Clear();
-            SidePanel.Height = DashboardButton.Height;
-            SidePanel.Location = DashboardButton.Location;
+            SidePanel.Height = HomePage_Dashboard.Height;
+            SidePanel.Location = HomePage_Dashboard.Location;
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             HomePanel.Controls.Clear();
-            SidePanel.Height = CalandarDashBoard.Height;
-            SidePanel.Location = CalandarDashBoard.Location;
+            SidePanel.Height = HomePage_Calendar.Height;
+            SidePanel.Location = HomePage_Calendar.Location;
             if (!HomePanel.Controls.Contains(HomeCalander.Instance))
             {
                 HomePanel.Controls.Clear();
@@ -118,8 +118,8 @@ namespace NadhamniCSharp
         private void button4_Click(object sender, EventArgs e)
         {
             HomePanel.Controls.Clear();
-            SidePanel.Height = ThisWeekButton.Height;
-            SidePanel.Location = ThisWeekButton.Location;
+            SidePanel.Height = HomePage_Thisweek.Height;
+            SidePanel.Location = HomePage_Thisweek.Location;
 
 
         }

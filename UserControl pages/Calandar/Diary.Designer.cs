@@ -32,9 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.LabelDate = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Diary_delete = new System.Windows.Forms.Button();
+            this.Diary_edit = new System.Windows.Forms.Button();
+            this.Diary_read = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
@@ -69,53 +69,53 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCoral;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.Diary_delete);
+            this.panel2.Controls.Add(this.Diary_edit);
+            this.panel2.Controls.Add(this.Diary_read);
             this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 54);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // Diary_delete
             // 
-            this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::NadhamniCSharp.Properties.Resources.bin;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(422, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 47);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "         Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Diary_delete.BackColor = System.Drawing.Color.LightCoral;
+            this.Diary_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Diary_delete.Image = global::NadhamniCSharp.Properties.Resources.bin;
+            this.Diary_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Diary_delete.Location = new System.Drawing.Point(422, 4);
+            this.Diary_delete.Name = "Diary_delete";
+            this.Diary_delete.Size = new System.Drawing.Size(105, 47);
+            this.Diary_delete.TabIndex = 5;
+            this.Diary_delete.Text = "         Delete";
+            this.Diary_delete.UseVisualStyleBackColor = false;
+            this.Diary_delete.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // Diary_edit
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::NadhamniCSharp.Properties.Resources.pencil;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button2.Location = new System.Drawing.Point(531, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 47);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "           Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Diary_edit.BackColor = System.Drawing.Color.LightCoral;
+            this.Diary_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Diary_edit.Image = global::NadhamniCSharp.Properties.Resources.pencil;
+            this.Diary_edit.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Diary_edit.Location = new System.Drawing.Point(531, 4);
+            this.Diary_edit.Name = "Diary_edit";
+            this.Diary_edit.Size = new System.Drawing.Size(105, 47);
+            this.Diary_edit.TabIndex = 5;
+            this.Diary_edit.Text = "           Edit";
+            this.Diary_edit.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // Diary_read
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::NadhamniCSharp.Properties.Resources.podcast;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(640, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 47);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Read for me ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Diary_read.BackColor = System.Drawing.Color.LightCoral;
+            this.Diary_read.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Diary_read.Image = global::NadhamniCSharp.Properties.Resources.podcast;
+            this.Diary_read.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Diary_read.Location = new System.Drawing.Point(640, 3);
+            this.Diary_read.Name = "Diary_read";
+            this.Diary_read.Size = new System.Drawing.Size(169, 47);
+            this.Diary_read.TabIndex = 5;
+            this.Diary_read.Text = "Read for me ";
+            this.Diary_read.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -157,9 +157,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.UI.WinForms.BunifuLabel LabelDate;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Diary_read;
+        private System.Windows.Forms.Button Diary_delete;
+        private System.Windows.Forms.Button Diary_edit;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

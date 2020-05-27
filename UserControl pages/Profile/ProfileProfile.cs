@@ -29,8 +29,8 @@ namespace NadhamniCSharp.UserControl_pages.Profile
 
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
-            next.Show();
-            cancel.Show();
+            ProfileProfile_Next.Show();
+            ProfileProfile_Cancer.Show();
         }
 
         private void ProfileProfile_Load(object sender, EventArgs e)

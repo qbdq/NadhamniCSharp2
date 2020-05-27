@@ -85,5 +85,10 @@ namespace NadhamniCSharp
         {
 
         }
+
+        private void ForgetPassword_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,57 +84,57 @@ namespace NadhamniCSharp.UserControl_pages.Calandar
         {
 
             
-            if (Conversions.ToDouble(Label2.Text) == DateTime.Today.Year)
+            if (Conversions.ToDouble(Year_January.Text) == DateTime.Today.Year)
             {
                 int monthno = DateTime.Today.Month;
                 transparentlabels();
                 if (monthno == 1)
                 {
-                    Label2.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_January.BackColor = Color.FromArgb(176, 180, 43);
                     }
                     else if (monthno == 2)
                     {
-                        Label3.BackColor = Color.FromArgb(176, 180, 43);
+                        Year_February.BackColor = Color.FromArgb(176, 180, 43);
                     }
                     else if (monthno == 3)
                     {
-                        Label4.BackColor = Color.FromArgb(176, 180, 43);
+                        Year_March.BackColor = Color.FromArgb(176, 180, 43);
                     }
                     else if (monthno == 4)
                 {
-                    Label5.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_April.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 5)
                 {
-                    Label6.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_May.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 6)
                 {
-                    Label7.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_June.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 7)
                 {
-                    Label8.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_July.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 8)
                 {
-                    Label9.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_August.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 9)
                 {
-                    Label10.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_September.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 10)
                 {
-                    Label11.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_October.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 11)
                 {
-                    Label12.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_November.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 12)
                 {
-                    Label13.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_December.BackColor = Color.FromArgb(176, 180, 43);
                 }
             }
             else
@@ -144,18 +144,18 @@ namespace NadhamniCSharp.UserControl_pages.Calandar
         }
         private void transparentlabels()
         {
-            Label2.BackColor = Color.FromArgb(255, 160 ,122);
-            Label3.BackColor = Color.FromArgb(255, 160 ,122);
-            Label4.BackColor = Color.FromArgb(255, 160 ,122);
-            Label5.BackColor = Color.FromArgb(255, 160 ,122);
-            Label6.BackColor = Color.FromArgb(255, 160 ,122);
-            Label7.BackColor = Color.FromArgb(255, 160 ,122);
-            Label8.BackColor = Color.FromArgb(255, 160 ,122);
-            Label9.BackColor = Color.FromArgb(255, 160 ,122);
-            Label10.BackColor = Color.FromArgb(255, 160 ,122);
-            Label11.BackColor = Color.FromArgb(255, 160 ,122);
-            Label12.BackColor = Color.FromArgb(255, 160 ,122);
-            Label13.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_January.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_February.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_March.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_April.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_May.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_June.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_July.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_August.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_September.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_October.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_November.BackColor = Color.FromArgb(255, 160 ,122);
+            Year_December.BackColor = Color.FromArgb(255, 160 ,122);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -166,57 +166,57 @@ namespace NadhamniCSharp.UserControl_pages.Calandar
 
         private void Year_Load(object sender, EventArgs e)
         {
-            if (Conversions.ToDouble(Label1.Text) == DateTime.Today.Year)
+            if (Conversions.ToDouble(Year_Year.Text) == DateTime.Today.Year)
             {
                 int monthno = DateTime.Today.Month;
                 transparentlabels();
                 if (monthno == 1)
                 {
-                    Label2.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_January.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 2)
                 {
-                    Label3.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_February.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 3)
                 {
-                    Label4.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_March.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 4)
                 {
-                    Label5.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_April.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 5)
                 {
-                    Label6.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_May.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 6)
                 {
-                    Label7.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_June.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 7)
                 {
-                    Label8.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_July.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 8)
                 {
-                    Label9.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_August.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 9)
                 {
-                    Label10.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_September.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 10)
                 {
-                    Label11.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_October.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 11)
                 {
-                    Label12.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_November.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 12)
                 {
-                    Label13.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_December.BackColor = Color.FromArgb(176, 180, 43);
                 }
             }
             else
@@ -228,60 +228,60 @@ namespace NadhamniCSharp.UserControl_pages.Calandar
    
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            int userVal = int.Parse(Label1.Text) - 1;
-            Label1.Text = userVal.ToString();
+            int userVal = int.Parse(Year_Year.Text) - 1;
+            Year_Year.Text = userVal.ToString();
 
-            if (Conversions.ToDouble(Label1.Text) == DateTime.Today.Year)
+            if (Conversions.ToDouble(Year_Year.Text) == DateTime.Today.Year)
             {
                 int monthno = DateTime.Today.Month;
                 transparentlabels();
                 if (monthno == 1)
                 {
-                    Label2.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_January.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 2)
                 {
-                    Label3.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_February.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 3)
                 {
-                    Label4.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_March.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 4)
                 {
-                    Label5.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_April.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 5)
                 {
-                    Label6.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_May.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 6)
                 {
-                    Label7.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_June.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 7)
                 {
-                    Label8.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_July.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 8)
                 {
-                    Label9.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_August.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 9)
                 {
-                    Label10.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_September.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 10)
                 {
-                    Label11.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_October.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 11)
                 {
-                    Label12.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_November.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 12)
                 {
-                    Label13.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_December.BackColor = Color.FromArgb(176, 180, 43);
                 }
             }
             else
@@ -297,60 +297,60 @@ namespace NadhamniCSharp.UserControl_pages.Calandar
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
 
-            int userVal = int.Parse(Label1.Text) + 1;
-            Label1.Text = userVal.ToString();
+            int userVal = int.Parse(Year_Year.Text) + 1;
+            Year_Year.Text = userVal.ToString();
 
-            if (Conversions.ToDouble(Label1.Text) == DateTime.Today.Year)
+            if (Conversions.ToDouble(Year_Year.Text) == DateTime.Today.Year)
             {
                 int monthno = DateTime.Today.Month;
                 transparentlabels();
                 if (monthno == 1)
                 {
-                    Label2.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_January.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 2)
                 {
-                    Label3.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_February.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 3)
                 {
-                    Label4.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_March.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 4)
                 {
-                    Label5.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_April.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 5)
                 {
-                    Label6.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_May.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 6)
                 {
-                    Label7.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_June.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 7)
                 {
-                    Label8.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_July.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 8)
                 {
-                    Label9.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_August.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 9)
                 {
-                    Label10.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_September.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 10)
                 {
-                    Label11.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_October.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 11)
                 {
-                    Label12.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_November.BackColor = Color.FromArgb(176, 180, 43);
                 }
                 else if (monthno == 12)
                 {
-                    Label13.BackColor = Color.FromArgb(176, 180, 43);
+                    Year_December.BackColor = Color.FromArgb(176, 180, 43);
                 }
             }
             else
