@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeCalander));
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Day = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Month = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Year = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Day2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Hour = new Bunifu.UI.WinForms.BunifuLabel();
+            this.HomeCalendar_Date_Minutes = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuProgressBar2 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.bunifuProgressBar3 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.HomeCalendar_Events = new System.Windows.Forms.Button();
+            this.HomeCalendar_Mydiary = new System.Windows.Forms.Button();
+            this.HomeCalendar_Day = new System.Windows.Forms.Button();
+            this.HomeCalendar_Month = new System.Windows.Forms.Button();
+            this.HomeCalendar_Year = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -50,94 +50,94 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuLabel1
+            // HomeCalendar_Date_Day
             // 
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Arial", 55F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(281, 31);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(85, 88);
-            this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = "00";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Day.AutoEllipsis = false;
+            this.HomeCalendar_Date_Day.CursorType = null;
+            this.HomeCalendar_Date_Day.Font = new System.Drawing.Font("Arial", 55F, System.Drawing.FontStyle.Bold);
+            this.HomeCalendar_Date_Day.Location = new System.Drawing.Point(281, 31);
+            this.HomeCalendar_Date_Day.Name = "HomeCalendar_Date_Day";
+            this.HomeCalendar_Date_Day.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Day.Size = new System.Drawing.Size(85, 88);
+            this.HomeCalendar_Date_Day.TabIndex = 0;
+            this.HomeCalendar_Date_Day.Text = "00";
+            this.HomeCalendar_Date_Day.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Day.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel2
+            // HomeCalendar_Date_Month
             // 
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(406, 35);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(92, 36);
-            this.bunifuLabel2.TabIndex = 0;
-            this.bunifuLabel2.Text = "Month";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click);
+            this.HomeCalendar_Date_Month.AutoEllipsis = false;
+            this.HomeCalendar_Date_Month.CursorType = null;
+            this.HomeCalendar_Date_Month.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
+            this.HomeCalendar_Date_Month.Location = new System.Drawing.Point(406, 35);
+            this.HomeCalendar_Date_Month.Name = "HomeCalendar_Date_Month";
+            this.HomeCalendar_Date_Month.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Month.Size = new System.Drawing.Size(302, 117);
+            this.HomeCalendar_Date_Month.TabIndex = 0;
+            this.HomeCalendar_Date_Month.Text = "Month";
+            this.HomeCalendar_Date_Month.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Month.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Month.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // bunifuLabel3
+            // HomeCalendar_Date_Year
             // 
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel3.Location = new System.Drawing.Point(504, 35);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(67, 36);
-            this.bunifuLabel3.TabIndex = 0;
-            this.bunifuLabel3.Text = "2020";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel3.Click += new System.EventHandler(this.bunifuLabel2_Click);
+            this.HomeCalendar_Date_Year.AutoEllipsis = false;
+            this.HomeCalendar_Date_Year.CursorType = null;
+            this.HomeCalendar_Date_Year.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
+            this.HomeCalendar_Date_Year.Location = new System.Drawing.Point(504, 35);
+            this.HomeCalendar_Date_Year.Name = "HomeCalendar_Date_Year";
+            this.HomeCalendar_Date_Year.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Year.Size = new System.Drawing.Size(227, 117);
+            this.HomeCalendar_Date_Year.TabIndex = 0;
+            this.HomeCalendar_Date_Year.Text = "2020";
+            this.HomeCalendar_Date_Year.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Year.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Year.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // bunifuLabel4
+            // HomeCalendar_Date_Day2
             // 
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Arial", 27.75F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(414, 71);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(149, 44);
-            this.bunifuLabel4.TabIndex = 0;
-            this.bunifuLabel4.Text = "Saturday";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel4.Click += new System.EventHandler(this.bunifuLabel2_Click);
+            this.HomeCalendar_Date_Day2.AutoEllipsis = false;
+            this.HomeCalendar_Date_Day2.CursorType = null;
+            this.HomeCalendar_Date_Day2.Font = new System.Drawing.Font("Arial", 27.75F);
+            this.HomeCalendar_Date_Day2.Location = new System.Drawing.Point(348, 122);
+            this.HomeCalendar_Date_Day2.Name = "HomeCalendar_Date_Day2";
+            this.HomeCalendar_Date_Day2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Day2.Size = new System.Drawing.Size(404, 114);
+            this.HomeCalendar_Date_Day2.TabIndex = 0;
+            this.HomeCalendar_Date_Day2.Text = "Saturday";
+            this.HomeCalendar_Date_Day2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Day2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Day2.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // bunifuLabel5
+            // HomeCalendar_Date_Hour
             // 
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel5.Location = new System.Drawing.Point(311, 137);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(75, 74);
-            this.bunifuLabel5.TabIndex = 0;
-            this.bunifuLabel5.Text = "06";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel5.Click += new System.EventHandler(this.bunifuLabel5_Click);
+            this.HomeCalendar_Date_Hour.AutoEllipsis = false;
+            this.HomeCalendar_Date_Hour.CursorType = null;
+            this.HomeCalendar_Date_Hour.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeCalendar_Date_Hour.Location = new System.Drawing.Point(311, 137);
+            this.HomeCalendar_Date_Hour.Name = "HomeCalendar_Date_Hour";
+            this.HomeCalendar_Date_Hour.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Hour.Size = new System.Drawing.Size(75, 74);
+            this.HomeCalendar_Date_Hour.TabIndex = 0;
+            this.HomeCalendar_Date_Hour.Text = "06";
+            this.HomeCalendar_Date_Hour.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Hour.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Hour.Click += new System.EventHandler(this.bunifuLabel5_Click);
             // 
-            // bunifuLabel6
+            // HomeCalendar_Date_Minutes
             // 
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel6.Location = new System.Drawing.Point(422, 137);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(75, 74);
-            this.bunifuLabel6.TabIndex = 0;
-            this.bunifuLabel6.Text = "58";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel6.Click += new System.EventHandler(this.bunifuLabel5_Click);
+            this.HomeCalendar_Date_Minutes.AutoEllipsis = false;
+            this.HomeCalendar_Date_Minutes.CursorType = null;
+            this.HomeCalendar_Date_Minutes.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeCalendar_Date_Minutes.Location = new System.Drawing.Point(422, 137);
+            this.HomeCalendar_Date_Minutes.Name = "HomeCalendar_Date_Minutes";
+            this.HomeCalendar_Date_Minutes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HomeCalendar_Date_Minutes.Size = new System.Drawing.Size(75, 74);
+            this.HomeCalendar_Date_Minutes.TabIndex = 0;
+            this.HomeCalendar_Date_Minutes.Text = "58";
+            this.HomeCalendar_Date_Minutes.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.HomeCalendar_Date_Minutes.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.HomeCalendar_Date_Minutes.Click += new System.EventHandler(this.bunifuLabel5_Click);
             // 
             // panel1
             // 
@@ -171,66 +171,66 @@
             this.bunifuProgressBar3.TabIndex = 3;
             this.bunifuProgressBar3.Value = 0;
             // 
-            // button5
+            // HomeCalendar_Events
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::NadhamniCSharp.Properties.Resources.Special;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(58, 262);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 47);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "         Special events";
-            this.button5.UseVisualStyleBackColor = true;
+            this.HomeCalendar_Events.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeCalendar_Events.Image = global::NadhamniCSharp.Properties.Resources.Special;
+            this.HomeCalendar_Events.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeCalendar_Events.Location = new System.Drawing.Point(58, 262);
+            this.HomeCalendar_Events.Name = "HomeCalendar_Events";
+            this.HomeCalendar_Events.Size = new System.Drawing.Size(128, 47);
+            this.HomeCalendar_Events.TabIndex = 5;
+            this.HomeCalendar_Events.Text = "         Special events";
+            this.HomeCalendar_Events.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // HomeCalendar_Mydiary
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::NadhamniCSharp.Properties.Resources.calendar__10_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(203, 262);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 47);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "My diary";
-            this.button3.UseVisualStyleBackColor = true;
+            this.HomeCalendar_Mydiary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeCalendar_Mydiary.Image = global::NadhamniCSharp.Properties.Resources.calendar__10_;
+            this.HomeCalendar_Mydiary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeCalendar_Mydiary.Location = new System.Drawing.Point(203, 262);
+            this.HomeCalendar_Mydiary.Name = "HomeCalendar_Mydiary";
+            this.HomeCalendar_Mydiary.Size = new System.Drawing.Size(128, 47);
+            this.HomeCalendar_Mydiary.TabIndex = 5;
+            this.HomeCalendar_Mydiary.Text = "My diary";
+            this.HomeCalendar_Mydiary.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // HomeCalendar_Day
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::NadhamniCSharp.Properties.Resources.calendar__7_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(348, 262);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 47);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Day";
-            this.button4.UseVisualStyleBackColor = true;
+            this.HomeCalendar_Day.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeCalendar_Day.Image = global::NadhamniCSharp.Properties.Resources.calendar__7_;
+            this.HomeCalendar_Day.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeCalendar_Day.Location = new System.Drawing.Point(348, 262);
+            this.HomeCalendar_Day.Name = "HomeCalendar_Day";
+            this.HomeCalendar_Day.Size = new System.Drawing.Size(128, 47);
+            this.HomeCalendar_Day.TabIndex = 6;
+            this.HomeCalendar_Day.Text = "Day";
+            this.HomeCalendar_Day.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // HomeCalendar_Month
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::NadhamniCSharp.Properties.Resources.calendar__8_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(496, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 47);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Month";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.HomeCalendar_Month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeCalendar_Month.Image = global::NadhamniCSharp.Properties.Resources.calendar__8_;
+            this.HomeCalendar_Month.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeCalendar_Month.Location = new System.Drawing.Point(496, 262);
+            this.HomeCalendar_Month.Name = "HomeCalendar_Month";
+            this.HomeCalendar_Month.Size = new System.Drawing.Size(128, 47);
+            this.HomeCalendar_Month.TabIndex = 4;
+            this.HomeCalendar_Month.Text = "Month";
+            this.HomeCalendar_Month.UseVisualStyleBackColor = true;
+            this.HomeCalendar_Month.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // HomeCalendar_Year
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::NadhamniCSharp.Properties.Resources.calendar__9_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(641, 262);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 47);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Year";
-            this.button1.UseVisualStyleBackColor = true;
+            this.HomeCalendar_Year.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeCalendar_Year.Image = global::NadhamniCSharp.Properties.Resources.calendar__9_;
+            this.HomeCalendar_Year.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeCalendar_Year.Location = new System.Drawing.Point(641, 262);
+            this.HomeCalendar_Year.Name = "HomeCalendar_Year";
+            this.HomeCalendar_Year.Size = new System.Drawing.Size(128, 47);
+            this.HomeCalendar_Year.TabIndex = 4;
+            this.HomeCalendar_Year.Text = "Year";
+            this.HomeCalendar_Year.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -251,7 +251,7 @@
             this.bunifuLabel9.Location = new System.Drawing.Point(47, 98);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(640, 18);
+            this.bunifuLabel9.Size = new System.Drawing.Size(4813, 115);
             this.bunifuLabel9.TabIndex = 0;
             this.bunifuLabel9.Text = "Now use this app\'s diary to make your own personal journal of daily events ,secer" +
     "ts n feelinggs and thoughts";
@@ -268,7 +268,7 @@
             this.bunifuLabel8.Location = new System.Drawing.Point(91, 65);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(534, 18);
+            this.bunifuLabel8.Size = new System.Drawing.Size(3475, 115);
             this.bunifuLabel8.TabIndex = 0;
             this.bunifuLabel8.Text = "Added Special Events tab for checking special events for the day exclusively ";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -284,7 +284,7 @@
             this.bunifuLabel7.Location = new System.Drawing.Point(21, 21);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(666, 80);
+            this.bunifuLabel7.Size = new System.Drawing.Size(367, 36);
             this.bunifuLabel7.TabIndex = 0;
             this.bunifuLabel7.Text = "Make Your day easy by saving your events reminders and aapointments here you can " +
     "now also save birthdays , \r\ndates and  anniversary , your reading at work schedu" +
@@ -299,20 +299,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Salmon;
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.HomeCalendar_Events);
+            this.Controls.Add(this.HomeCalendar_Mydiary);
+            this.Controls.Add(this.HomeCalendar_Day);
+            this.Controls.Add(this.HomeCalendar_Month);
+            this.Controls.Add(this.HomeCalendar_Year);
             this.Controls.Add(this.bunifuProgressBar3);
             this.Controls.Add(this.bunifuProgressBar2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.bunifuLabel4);
-            this.Controls.Add(this.bunifuLabel3);
-            this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel6);
-            this.Controls.Add(this.bunifuLabel5);
-            this.Controls.Add(this.bunifuLabel1);
+            this.Controls.Add(this.HomeCalendar_Date_Day2);
+            this.Controls.Add(this.HomeCalendar_Date_Year);
+            this.Controls.Add(this.HomeCalendar_Date_Month);
+            this.Controls.Add(this.HomeCalendar_Date_Minutes);
+            this.Controls.Add(this.HomeCalendar_Date_Hour);
+            this.Controls.Add(this.HomeCalendar_Date_Day);
             this.Name = "HomeCalander";
             this.Size = new System.Drawing.Size(812, 480);
             this.Load += new System.EventHandler(this.HomeCalander_Load);
@@ -325,20 +325,20 @@
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Day;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Month;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Year;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Day2;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Hour;
+        private Bunifu.UI.WinForms.BunifuLabel HomeCalendar_Date_Minutes;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar2;
         private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button HomeCalendar_Year;
+        private System.Windows.Forms.Button HomeCalendar_Month;
+        private System.Windows.Forms.Button HomeCalendar_Mydiary;
+        private System.Windows.Forms.Button HomeCalendar_Day;
+        private System.Windows.Forms.Button HomeCalendar_Events;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;

@@ -1,6 +1,6 @@
 ﻿namespace NadhamniCSharp.All_App
 {
-    partial class UserControl1
+    partial class Task_Location
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task_Location));
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
@@ -38,130 +38,128 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TaskDate = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TaskSave = new System.Windows.Forms.PictureBox();
-            this.TaskReset = new System.Windows.Forms.PictureBox();
-            this.Taskusual = new System.Windows.Forms.PictureBox();
-            this.TaskStatus = new System.Windows.Forms.Label();
+            this.Task_save = new System.Windows.Forms.PictureBox();
+            this.Task_delete = new System.Windows.Forms.PictureBox();
+            this.Task_RepeatDaily = new System.Windows.Forms.PictureBox();
+            this._Label1 = new System.Windows.Forms.Label();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskImage = new Bunifu.Framework.UI.BunifuImageButton();
-            this.TaskTitle = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Task_Title = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskStartTime = new System.Windows.Forms.Label();
-            this.TaskEndTime = new System.Windows.Forms.Label();
-            this.TaskRadioAllDay = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.Task_AllDay = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this._Label16 = new System.Windows.Forms.Label();
             this._PictureBox6 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskAnniversary = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.Task_Anniversary = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskGraduation = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.Task_Graduation = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskEnagement = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.Task_Engagement = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.TaskOther = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.Task_OtherEvent = new Bunifu.UI.WinForms.BunifuRadioButton();
             this._Label20 = new System.Windows.Forms.Label();
-            this.TaskDetails = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.Task_Details = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.Task_StartTime = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.Task_EndTime = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskSave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskReset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Taskusual)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_delete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_RepeatDaily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel1.Controls.Add(this.TaskDate);
+            this.panel1.Controls.Add(this.bunifuLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(812, 41);
             this.panel1.TabIndex = 0;
             // 
-            // TaskDate
+            // bunifuLabel1
             // 
-            this.TaskDate.AutoEllipsis = false;
-            this.TaskDate.CursorType = null;
-            this.TaskDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.TaskDate.Location = new System.Drawing.Point(377, 3);
-            this.TaskDate.Name = "TaskDate";
-            this.TaskDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TaskDate.Size = new System.Drawing.Size(53, 31);
-            this.TaskDate.TabIndex = 0;
-            this.TaskDate.Text = "Date";
-            this.TaskDate.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.TaskDate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.TaskDate.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(377, 3);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(53, 31);
+            this.bunifuLabel1.TabIndex = 0;
+            this.bunifuLabel1.Text = "Date";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel2.Controls.Add(this.TaskSave);
-            this.panel2.Controls.Add(this.TaskReset);
-            this.panel2.Controls.Add(this.Taskusual);
-            this.panel2.Controls.Add(this.TaskStatus);
+            this.panel2.Controls.Add(this.Task_save);
+            this.panel2.Controls.Add(this.Task_delete);
+            this.panel2.Controls.Add(this.Task_RepeatDaily);
+            this.panel2.Controls.Add(this._Label1);
             this.panel2.Controls.Add(this.bunifuLabel2);
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 47);
             this.panel2.TabIndex = 1;
             // 
-            // TaskSave
+            // Task_save
             // 
-            this.TaskSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TaskSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TaskSave.Image = ((System.Drawing.Image)(resources.GetObject("TaskSave.Image")));
-            this.TaskSave.Location = new System.Drawing.Point(503, 6);
-            this.TaskSave.Name = "TaskSave";
-            this.TaskSave.Size = new System.Drawing.Size(34, 34);
-            this.TaskSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TaskSave.TabIndex = 45;
-            this.TaskSave.TabStop = false;
+            this.Task_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Task_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Task_save.Image = ((System.Drawing.Image)(resources.GetObject("Task_save.Image")));
+            this.Task_save.Location = new System.Drawing.Point(503, 6);
+            this.Task_save.Name = "Task_save";
+            this.Task_save.Size = new System.Drawing.Size(34, 34);
+            this.Task_save.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Task_save.TabIndex = 45;
+            this.Task_save.TabStop = false;
             // 
-            // TaskReset
+            // Task_delete
             // 
-            this.TaskReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TaskReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TaskReset.Image = ((System.Drawing.Image)(resources.GetObject("TaskReset.Image")));
-            this.TaskReset.Location = new System.Drawing.Point(547, 6);
-            this.TaskReset.Name = "TaskReset";
-            this.TaskReset.Size = new System.Drawing.Size(34, 34);
-            this.TaskReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TaskReset.TabIndex = 46;
-            this.TaskReset.TabStop = false;
+            this.Task_delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Task_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Task_delete.Image = ((System.Drawing.Image)(resources.GetObject("Task_delete.Image")));
+            this.Task_delete.Location = new System.Drawing.Point(547, 6);
+            this.Task_delete.Name = "Task_delete";
+            this.Task_delete.Size = new System.Drawing.Size(34, 34);
+            this.Task_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Task_delete.TabIndex = 46;
+            this.Task_delete.TabStop = false;
             // 
-            // Taskusual
+            // Task_RepeatDaily
             // 
-            this.Taskusual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Taskusual.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Taskusual.Image = ((System.Drawing.Image)(resources.GetObject("Taskusual.Image")));
-            this.Taskusual.Location = new System.Drawing.Point(764, 6);
-            this.Taskusual.Name = "Taskusual";
-            this.Taskusual.Size = new System.Drawing.Size(34, 34);
-            this.Taskusual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Taskusual.TabIndex = 47;
-            this.Taskusual.TabStop = false;
+            this.Task_RepeatDaily.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Task_RepeatDaily.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Task_RepeatDaily.Image = ((System.Drawing.Image)(resources.GetObject("Task_RepeatDaily.Image")));
+            this.Task_RepeatDaily.Location = new System.Drawing.Point(764, 6);
+            this.Task_RepeatDaily.Name = "Task_RepeatDaily";
+            this.Task_RepeatDaily.Size = new System.Drawing.Size(34, 34);
+            this.Task_RepeatDaily.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Task_RepeatDaily.TabIndex = 47;
+            this.Task_RepeatDaily.TabStop = false;
             // 
-            // TaskStatus
+            // _Label1
             // 
-            this.TaskStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TaskStatus.BackColor = System.Drawing.Color.Firebrick;
-            this.TaskStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TaskStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.TaskStatus.ForeColor = System.Drawing.Color.White;
-            this.TaskStatus.Location = new System.Drawing.Point(651, 9);
-            this.TaskStatus.Name = "TaskStatus";
-            this.TaskStatus.Size = new System.Drawing.Size(101, 30);
-            this.TaskStatus.TabIndex = 45;
-            this.TaskStatus.Text = "Busy";
-            this.TaskStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._Label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this._Label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this._Label1.ForeColor = System.Drawing.Color.White;
+            this._Label1.Location = new System.Drawing.Point(651, 9);
+            this._Label1.Name = "_Label1";
+            this._Label1.Size = new System.Drawing.Size(101, 30);
+            this._Label1.TabIndex = 45;
+            this._Label1.Text = "Busy";
+            this._Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuLabel2
             // 
@@ -178,90 +176,90 @@
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskImage
+            // bunifuImageButton4
             // 
-            this.TaskImage.Image = ((System.Drawing.Image)(resources.GetObject("TaskImage.Image")));
-            this.TaskImage.ImageActive = null;
-            this.TaskImage.Location = new System.Drawing.Point(7, 94);
-            this.TaskImage.Name = "TaskImage";
-            this.TaskImage.Size = new System.Drawing.Size(43, 44);
-            this.TaskImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.TaskImage.TabIndex = 0;
-            this.TaskImage.TabStop = false;
-            this.TaskImage.Zoom = 10;
+            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
+            this.bunifuImageButton4.ImageActive = null;
+            this.bunifuImageButton4.Location = new System.Drawing.Point(7, 94);
+            this.bunifuImageButton4.Name = "bunifuImageButton4";
+            this.bunifuImageButton4.Size = new System.Drawing.Size(43, 44);
+            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton4.TabIndex = 0;
+            this.bunifuImageButton4.TabStop = false;
+            this.bunifuImageButton4.Zoom = 10;
             // 
-            // TaskTitle
+            // Task_Title
             // 
-            this.TaskTitle.AcceptsReturn = false;
-            this.TaskTitle.AcceptsTab = false;
-            this.TaskTitle.AnimationSpeed = 200;
-            this.TaskTitle.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TaskTitle.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TaskTitle.BackColor = System.Drawing.Color.Transparent;
-            this.TaskTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TaskTitle.BackgroundImage")));
-            this.TaskTitle.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.TaskTitle.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.TaskTitle.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TaskTitle.BorderColorIdle = System.Drawing.Color.Silver;
-            this.TaskTitle.BorderRadius = 1;
-            this.TaskTitle.BorderThickness = 1;
-            this.TaskTitle.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TaskTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskTitle.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.TaskTitle.DefaultText = "";
-            this.TaskTitle.FillColor = System.Drawing.Color.White;
-            this.TaskTitle.HideSelection = true;
-            this.TaskTitle.IconLeft = null;
-            this.TaskTitle.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskTitle.IconPadding = 10;
-            this.TaskTitle.IconRight = null;
-            this.TaskTitle.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskTitle.Lines = new string[0];
-            this.TaskTitle.Location = new System.Drawing.Point(63, 99);
-            this.TaskTitle.MaxLength = 32767;
-            this.TaskTitle.MinimumSize = new System.Drawing.Size(100, 35);
-            this.TaskTitle.Modified = false;
-            this.TaskTitle.Multiline = false;
-            this.TaskTitle.Name = "TaskTitle";
+            this.Task_Title.AcceptsReturn = false;
+            this.Task_Title.AcceptsTab = false;
+            this.Task_Title.AnimationSpeed = 200;
+            this.Task_Title.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Task_Title.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Task_Title.BackColor = System.Drawing.Color.Transparent;
+            this.Task_Title.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Task_Title.BackgroundImage")));
+            this.Task_Title.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.Task_Title.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.Task_Title.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Task_Title.BorderColorIdle = System.Drawing.Color.Silver;
+            this.Task_Title.BorderRadius = 1;
+            this.Task_Title.BorderThickness = 1;
+            this.Task_Title.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Task_Title.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Title.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Task_Title.DefaultText = "";
+            this.Task_Title.FillColor = System.Drawing.Color.White;
+            this.Task_Title.HideSelection = true;
+            this.Task_Title.IconLeft = null;
+            this.Task_Title.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Title.IconPadding = 10;
+            this.Task_Title.IconRight = null;
+            this.Task_Title.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Title.Lines = new string[0];
+            this.Task_Title.Location = new System.Drawing.Point(63, 99);
+            this.Task_Title.MaxLength = 32767;
+            this.Task_Title.MinimumSize = new System.Drawing.Size(100, 35);
+            this.Task_Title.Modified = false;
+            this.Task_Title.Multiline = false;
+            this.Task_Title.Name = "Task_Title";
             stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskTitle.OnActiveState = stateProperties1;
+            this.Task_Title.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.Empty;
             stateProperties2.FillColor = System.Drawing.Color.White;
             stateProperties2.ForeColor = System.Drawing.Color.Empty;
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskTitle.OnDisabledState = stateProperties2;
+            this.Task_Title.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskTitle.OnHoverState = stateProperties3;
+            this.Task_Title.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskTitle.OnIdleState = stateProperties4;
-            this.TaskTitle.PasswordChar = '\0';
-            this.TaskTitle.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskTitle.PlaceholderText = "Title";
-            this.TaskTitle.ReadOnly = false;
-            this.TaskTitle.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TaskTitle.SelectedText = "";
-            this.TaskTitle.SelectionLength = 0;
-            this.TaskTitle.SelectionStart = 0;
-            this.TaskTitle.ShortcutsEnabled = true;
-            this.TaskTitle.Size = new System.Drawing.Size(721, 35);
-            this.TaskTitle.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TaskTitle.TabIndex = 2;
-            this.TaskTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TaskTitle.TextMarginBottom = 0;
-            this.TaskTitle.TextMarginLeft = 5;
-            this.TaskTitle.TextMarginTop = 0;
-            this.TaskTitle.TextPlaceholder = "Title";
-            this.TaskTitle.UseSystemPasswordChar = false;
-            this.TaskTitle.WordWrap = true;
+            this.Task_Title.OnIdleState = stateProperties4;
+            this.Task_Title.PasswordChar = '\0';
+            this.Task_Title.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.Task_Title.PlaceholderText = "Title";
+            this.Task_Title.ReadOnly = false;
+            this.Task_Title.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Task_Title.SelectedText = "";
+            this.Task_Title.SelectionLength = 0;
+            this.Task_Title.SelectionStart = 0;
+            this.Task_Title.ShortcutsEnabled = true;
+            this.Task_Title.Size = new System.Drawing.Size(721, 35);
+            this.Task_Title.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.Task_Title.TabIndex = 2;
+            this.Task_Title.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Task_Title.TextMarginBottom = 0;
+            this.Task_Title.TextMarginLeft = 5;
+            this.Task_Title.TextMarginTop = 0;
+            this.Task_Title.TextPlaceholder = "Title";
+            this.Task_Title.UseSystemPasswordChar = false;
+            this.Task_Title.WordWrap = true;
             // 
             // bunifuLabel3
             // 
@@ -293,42 +291,16 @@
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel4.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskStartTime
+            // Task_AllDay
             // 
-            this.TaskStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.TaskStartTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TaskStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.TaskStartTime.ForeColor = System.Drawing.Color.White;
-            this.TaskStartTime.Location = new System.Drawing.Point(101, 151);
-            this.TaskStartTime.Name = "TaskStartTime";
-            this.TaskStartTime.Size = new System.Drawing.Size(234, 30);
-            this.TaskStartTime.TabIndex = 15;
-            this.TaskStartTime.Text = "09:00 AM";
-            this.TaskStartTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TaskEndTime
-            // 
-            this.TaskEndTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.TaskEndTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TaskEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.TaskEndTime.ForeColor = System.Drawing.Color.White;
-            this.TaskEndTime.Location = new System.Drawing.Point(101, 191);
-            this.TaskEndTime.Name = "TaskEndTime";
-            this.TaskEndTime.Size = new System.Drawing.Size(234, 30);
-            this.TaskEndTime.TabIndex = 15;
-            this.TaskEndTime.Text = "09:00 AM";
-            this.TaskEndTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TaskRadioAllDay
-            // 
-            this.TaskRadioAllDay.Checked = true;
-            this.TaskRadioAllDay.Location = new System.Drawing.Point(377, 167);
-            this.TaskRadioAllDay.Name = "TaskRadioAllDay";
-            this.TaskRadioAllDay.OutlineColor = System.Drawing.Color.Purple;
-            this.TaskRadioAllDay.RadioColor = System.Drawing.Color.Purple;
-            this.TaskRadioAllDay.Size = new System.Drawing.Size(39, 39);
-            this.TaskRadioAllDay.TabIndex = 16;
-            this.TaskRadioAllDay.Text = null;
+            this.Task_AllDay.Checked = true;
+            this.Task_AllDay.Location = new System.Drawing.Point(377, 167);
+            this.Task_AllDay.Name = "Task_AllDay";
+            this.Task_AllDay.OutlineColor = System.Drawing.Color.Purple;
+            this.Task_AllDay.RadioColor = System.Drawing.Color.Purple;
+            this.Task_AllDay.Size = new System.Drawing.Size(39, 39);
+            this.Task_AllDay.TabIndex = 16;
+            this.Task_AllDay.Text = null;
             // 
             // bunifuLabel5
             // 
@@ -345,26 +317,10 @@
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel5.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // _Label16
-            // 
-            this._Label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._Label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this._Label16.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this._Label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._Label16.ForeColor = System.Drawing.Color.White;
-            this._Label16.Location = new System.Drawing.Point(63, 237);
-            this._Label16.Name = "_Label16";
-            this._Label16.Size = new System.Drawing.Size(721, 30);
-            this._Label16.TabIndex = 23;
-            this._Label16.Text = "Location";
-            this._Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // _PictureBox6
             // 
-            this._PictureBox6.BackColor = System.Drawing.Color.DimGray;
             this._PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("_PictureBox6.Image")));
-            this._PictureBox6.Location = new System.Drawing.Point(17, 234);
+            this._PictureBox6.Location = new System.Drawing.Point(7, 231);
             this._PictureBox6.Name = "_PictureBox6";
             this._PictureBox6.Size = new System.Drawing.Size(36, 36);
             this._PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -401,16 +357,16 @@
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel7.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskAnniversary
+            // Task_Anniversary
             // 
-            this.TaskAnniversary.Checked = false;
-            this.TaskAnniversary.Location = new System.Drawing.Point(126, 298);
-            this.TaskAnniversary.Name = "TaskAnniversary";
-            this.TaskAnniversary.OutlineColor = System.Drawing.Color.Purple;
-            this.TaskAnniversary.RadioColor = System.Drawing.Color.Purple;
-            this.TaskAnniversary.Size = new System.Drawing.Size(30, 30);
-            this.TaskAnniversary.TabIndex = 16;
-            this.TaskAnniversary.Text = null;
+            this.Task_Anniversary.Checked = false;
+            this.Task_Anniversary.Location = new System.Drawing.Point(126, 298);
+            this.Task_Anniversary.Name = "Task_Anniversary";
+            this.Task_Anniversary.OutlineColor = System.Drawing.Color.Purple;
+            this.Task_Anniversary.RadioColor = System.Drawing.Color.Purple;
+            this.Task_Anniversary.Size = new System.Drawing.Size(30, 30);
+            this.Task_Anniversary.TabIndex = 16;
+            this.Task_Anniversary.Text = null;
             // 
             // bunifuLabel8
             // 
@@ -427,23 +383,23 @@
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel8.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskGraduation
+            // Task_Graduation
             // 
-            this.TaskGraduation.Checked = false;
-            this.TaskGraduation.Location = new System.Drawing.Point(259, 298);
-            this.TaskGraduation.Name = "TaskGraduation";
-            this.TaskGraduation.OutlineColor = System.Drawing.Color.Purple;
-            this.TaskGraduation.RadioColor = System.Drawing.Color.Purple;
-            this.TaskGraduation.Size = new System.Drawing.Size(30, 30);
-            this.TaskGraduation.TabIndex = 16;
-            this.TaskGraduation.Text = null;
+            this.Task_Graduation.Checked = false;
+            this.Task_Graduation.Location = new System.Drawing.Point(259, 298);
+            this.Task_Graduation.Name = "Task_Graduation";
+            this.Task_Graduation.OutlineColor = System.Drawing.Color.Purple;
+            this.Task_Graduation.RadioColor = System.Drawing.Color.Purple;
+            this.Task_Graduation.Size = new System.Drawing.Size(30, 30);
+            this.Task_Graduation.TabIndex = 16;
+            this.Task_Graduation.Text = null;
             // 
             // bunifuLabel9
             // 
             this.bunifuLabel9.AutoEllipsis = false;
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bunifuLabel9.Location = new System.Drawing.Point(442, 301);
+            this.bunifuLabel9.Location = new System.Drawing.Point(436, 301);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(95, 22);
@@ -453,16 +409,16 @@
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel9.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskEnagement
+            // Task_Engagement
             // 
-            this.TaskEnagement.Checked = false;
-            this.TaskEnagement.Location = new System.Drawing.Point(400, 298);
-            this.TaskEnagement.Name = "TaskEnagement";
-            this.TaskEnagement.OutlineColor = System.Drawing.Color.Purple;
-            this.TaskEnagement.RadioColor = System.Drawing.Color.Purple;
-            this.TaskEnagement.Size = new System.Drawing.Size(30, 30);
-            this.TaskEnagement.TabIndex = 16;
-            this.TaskEnagement.Text = null;
+            this.Task_Engagement.Checked = false;
+            this.Task_Engagement.Location = new System.Drawing.Point(400, 298);
+            this.Task_Engagement.Name = "Task_Engagement";
+            this.Task_Engagement.OutlineColor = System.Drawing.Color.Purple;
+            this.Task_Engagement.RadioColor = System.Drawing.Color.Purple;
+            this.Task_Engagement.Size = new System.Drawing.Size(30, 30);
+            this.Task_Engagement.TabIndex = 16;
+            this.Task_Engagement.Text = null;
             // 
             // bunifuLabel10
             // 
@@ -479,16 +435,16 @@
             this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel10.Click += new System.EventHandler(this.bunifuLabel2_Click);
             // 
-            // TaskOther
+            // Task_OtherEvent
             // 
-            this.TaskOther.Checked = false;
-            this.TaskOther.Location = new System.Drawing.Point(543, 298);
-            this.TaskOther.Name = "TaskOther";
-            this.TaskOther.OutlineColor = System.Drawing.Color.Purple;
-            this.TaskOther.RadioColor = System.Drawing.Color.Purple;
-            this.TaskOther.Size = new System.Drawing.Size(30, 30);
-            this.TaskOther.TabIndex = 16;
-            this.TaskOther.Text = null;
+            this.Task_OtherEvent.Checked = false;
+            this.Task_OtherEvent.Location = new System.Drawing.Point(543, 298);
+            this.Task_OtherEvent.Name = "Task_OtherEvent";
+            this.Task_OtherEvent.OutlineColor = System.Drawing.Color.Purple;
+            this.Task_OtherEvent.RadioColor = System.Drawing.Color.Purple;
+            this.Task_OtherEvent.Size = new System.Drawing.Size(30, 30);
+            this.Task_OtherEvent.TabIndex = 16;
+            this.Task_OtherEvent.Text = null;
             // 
             // _Label20
             // 
@@ -505,117 +461,166 @@
     " event in details section below.";
             this._Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TaskDetails
+            // Task_Details
             // 
-            this.TaskDetails.AcceptsReturn = false;
-            this.TaskDetails.AcceptsTab = false;
-            this.TaskDetails.AnimationSpeed = 200;
-            this.TaskDetails.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TaskDetails.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TaskDetails.BackColor = System.Drawing.Color.Transparent;
-            this.TaskDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TaskDetails.BackgroundImage")));
-            this.TaskDetails.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.TaskDetails.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.TaskDetails.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TaskDetails.BorderColorIdle = System.Drawing.Color.Silver;
-            this.TaskDetails.BorderRadius = 1;
-            this.TaskDetails.BorderThickness = 1;
-            this.TaskDetails.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TaskDetails.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskDetails.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.TaskDetails.DefaultText = "";
-            this.TaskDetails.FillColor = System.Drawing.Color.White;
-            this.TaskDetails.HideSelection = true;
-            this.TaskDetails.IconLeft = null;
-            this.TaskDetails.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskDetails.IconPadding = 10;
-            this.TaskDetails.IconRight = null;
-            this.TaskDetails.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TaskDetails.Lines = new string[0];
-            this.TaskDetails.Location = new System.Drawing.Point(3, 386);
-            this.TaskDetails.MaxLength = 32767;
-            this.TaskDetails.MinimumSize = new System.Drawing.Size(100, 35);
-            this.TaskDetails.Modified = false;
-            this.TaskDetails.Multiline = false;
-            this.TaskDetails.Name = "TaskDetails";
+            this.Task_Details.AcceptsReturn = false;
+            this.Task_Details.AcceptsTab = false;
+            this.Task_Details.AnimationSpeed = 200;
+            this.Task_Details.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Task_Details.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Task_Details.BackColor = System.Drawing.Color.Transparent;
+            this.Task_Details.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Task_Details.BackgroundImage")));
+            this.Task_Details.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.Task_Details.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.Task_Details.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Task_Details.BorderColorIdle = System.Drawing.Color.Silver;
+            this.Task_Details.BorderRadius = 1;
+            this.Task_Details.BorderThickness = 1;
+            this.Task_Details.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Task_Details.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Details.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Task_Details.DefaultText = "";
+            this.Task_Details.FillColor = System.Drawing.Color.White;
+            this.Task_Details.HideSelection = true;
+            this.Task_Details.IconLeft = null;
+            this.Task_Details.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Details.IconPadding = 10;
+            this.Task_Details.IconRight = null;
+            this.Task_Details.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Task_Details.Lines = new string[0];
+            this.Task_Details.Location = new System.Drawing.Point(3, 386);
+            this.Task_Details.MaxLength = 32767;
+            this.Task_Details.MinimumSize = new System.Drawing.Size(100, 35);
+            this.Task_Details.Modified = false;
+            this.Task_Details.Multiline = false;
+            this.Task_Details.Name = "Task_Details";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDetails.OnActiveState = stateProperties5;
+            this.Task_Details.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.Empty;
             stateProperties6.FillColor = System.Drawing.Color.White;
             stateProperties6.ForeColor = System.Drawing.Color.Empty;
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskDetails.OnDisabledState = stateProperties6;
+            this.Task_Details.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.FillColor = System.Drawing.Color.Empty;
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDetails.OnHoverState = stateProperties7;
+            this.Task_Details.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.White;
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDetails.OnIdleState = stateProperties8;
-            this.TaskDetails.PasswordChar = '\0';
-            this.TaskDetails.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskDetails.PlaceholderText = "Details";
-            this.TaskDetails.ReadOnly = false;
-            this.TaskDetails.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TaskDetails.SelectedText = "";
-            this.TaskDetails.SelectionLength = 0;
-            this.TaskDetails.SelectionStart = 0;
-            this.TaskDetails.ShortcutsEnabled = true;
-            this.TaskDetails.Size = new System.Drawing.Size(806, 91);
-            this.TaskDetails.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.TaskDetails.TabIndex = 2;
-            this.TaskDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TaskDetails.TextMarginBottom = 0;
-            this.TaskDetails.TextMarginLeft = 5;
-            this.TaskDetails.TextMarginTop = 0;
-            this.TaskDetails.TextPlaceholder = "Details";
-            this.TaskDetails.UseSystemPasswordChar = false;
-            this.TaskDetails.WordWrap = true;
+            this.Task_Details.OnIdleState = stateProperties8;
+            this.Task_Details.PasswordChar = '\0';
+            this.Task_Details.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.Task_Details.PlaceholderText = "Details";
+            this.Task_Details.ReadOnly = false;
+            this.Task_Details.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Task_Details.SelectedText = "";
+            this.Task_Details.SelectionLength = 0;
+            this.Task_Details.SelectionStart = 0;
+            this.Task_Details.ShortcutsEnabled = true;
+            this.Task_Details.Size = new System.Drawing.Size(806, 91);
+            this.Task_Details.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.Task_Details.TabIndex = 2;
+            this.Task_Details.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Task_Details.TextMarginBottom = 0;
+            this.Task_Details.TextMarginLeft = 5;
+            this.Task_Details.TextMarginTop = 0;
+            this.Task_Details.TextPlaceholder = "Details";
+            this.Task_Details.UseSystemPasswordChar = false;
+            this.Task_Details.WordWrap = true;
             // 
-            // UserControl1
+            // Task_StartTime
+            // 
+            this.Task_StartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Task_StartTime.BorderRadius = 0;
+            this.Task_StartTime.ForeColor = System.Drawing.Color.White;
+            this.Task_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Task_StartTime.FormatCustom = null;
+            this.Task_StartTime.Location = new System.Drawing.Point(97, 154);
+            this.Task_StartTime.Name = "Task_StartTime";
+            this.Task_StartTime.Size = new System.Drawing.Size(238, 30);
+            this.Task_StartTime.TabIndex = 45;
+            this.Task_StartTime.Value = new System.DateTime(2020, 5, 27, 11, 44, 21, 582);
+            // 
+            // Task_EndTime
+            // 
+            this.Task_EndTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Task_EndTime.BorderRadius = 0;
+            this.Task_EndTime.ForeColor = System.Drawing.Color.White;
+            this.Task_EndTime.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Task_EndTime.FormatCustom = null;
+            this.Task_EndTime.Location = new System.Drawing.Point(97, 190);
+            this.Task_EndTime.Name = "Task_EndTime";
+            this.Task_EndTime.Size = new System.Drawing.Size(238, 30);
+            this.Task_EndTime.TabIndex = 46;
+            this.Task_EndTime.Value = new System.DateTime(2020, 5, 27, 11, 44, 21, 582);
+            // 
+            // bunifuMaterialTextbox2
+            // 
+            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox2.HintText = "";
+            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox2.LineThickness = 3;
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(63, 237);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox2.MaxLength = 32767;
+            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
+            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(721, 30);
+            this.bunifuMaterialTextbox2.TabIndex = 48;
+            this.bunifuMaterialTextbox2.Text = "Location";
+            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // Task_Location
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.Task_EndTime);
+            this.Controls.Add(this.Task_StartTime);
             this.Controls.Add(this._Label20);
-            this.Controls.Add(this._Label16);
             this.Controls.Add(this._PictureBox6);
-            this.Controls.Add(this.TaskOther);
-            this.Controls.Add(this.TaskEnagement);
-            this.Controls.Add(this.TaskGraduation);
-            this.Controls.Add(this.TaskAnniversary);
+            this.Controls.Add(this.Task_OtherEvent);
+            this.Controls.Add(this.Task_Engagement);
+            this.Controls.Add(this.Task_Graduation);
+            this.Controls.Add(this.Task_Anniversary);
             this.Controls.Add(this.bunifuLabel10);
-            this.Controls.Add(this.TaskRadioAllDay);
+            this.Controls.Add(this.Task_AllDay);
             this.Controls.Add(this.bunifuLabel9);
-            this.Controls.Add(this.TaskEndTime);
             this.Controls.Add(this.bunifuLabel8);
-            this.Controls.Add(this.TaskStartTime);
             this.Controls.Add(this.bunifuLabel7);
-            this.Controls.Add(this.TaskDetails);
-            this.Controls.Add(this.TaskTitle);
+            this.Controls.Add(this.Task_Details);
+            this.Controls.Add(this.Task_Title);
             this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.bunifuLabel6);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.TaskImage);
-            this.Name = "UserControl1";
+            this.Controls.Add(this.bunifuImageButton4);
+            this.Name = "Task_Location";
             this.Size = new System.Drawing.Size(812, 480);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskSave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskReset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Taskusual)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TaskImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_delete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Task_RepeatDaily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._PictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -625,33 +630,33 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuLabel TaskDate;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private System.Windows.Forms.PictureBox TaskSave;
-        private System.Windows.Forms.PictureBox TaskReset;
-        private System.Windows.Forms.PictureBox Taskusual;
-        private System.Windows.Forms.Label TaskStatus;
-        private Bunifu.Framework.UI.BunifuImageButton TaskImage;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskTitle;
+        private System.Windows.Forms.PictureBox Task_save;
+        private System.Windows.Forms.PictureBox Task_delete;
+        private System.Windows.Forms.PictureBox Task_RepeatDaily;
+        private System.Windows.Forms.Label _Label1;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Task_Title;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private System.Windows.Forms.Label TaskStartTime;
-        private System.Windows.Forms.Label TaskEndTime;
-        private Bunifu.UI.WinForms.BunifuRadioButton TaskRadioAllDay;
+        private Bunifu.UI.WinForms.BunifuRadioButton Task_AllDay;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private System.Windows.Forms.Label _Label16;
         private System.Windows.Forms.PictureBox _PictureBox6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
-        private Bunifu.UI.WinForms.BunifuRadioButton TaskAnniversary;
+        private Bunifu.UI.WinForms.BunifuRadioButton Task_Anniversary;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
-        private Bunifu.UI.WinForms.BunifuRadioButton TaskGraduation;
+        private Bunifu.UI.WinForms.BunifuRadioButton Task_Graduation;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Bunifu.UI.WinForms.BunifuRadioButton TaskEnagement;
+        private Bunifu.UI.WinForms.BunifuRadioButton Task_Engagement;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
-        private Bunifu.UI.WinForms.BunifuRadioButton TaskOther;
+        private Bunifu.UI.WinForms.BunifuRadioButton Task_OtherEvent;
         private System.Windows.Forms.Label _Label20;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskDetails;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Task_Details;
+        private Bunifu.Framework.UI.BunifuDatepicker Task_StartTime;
+        private Bunifu.Framework.UI.BunifuDatepicker Task_EndTime;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
     }
 }

@@ -12,7 +12,9 @@ namespace NadhamniCSharp
 {
     public partial class LoginForm : Form
     {
-        
+
+        static DataClasses1DataContext NadhamniDB = new DataClasses1DataContext();
+
         public LoginForm()
         {
             InitializeComponent();
@@ -58,32 +60,48 @@ namespace NadhamniCSharp
         {
 
         }
-        private HomeForm f2;
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            
-            f2 = new HomeForm();
-            f2.Show();
-            this.Hide();
-
-        }
+       
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
 
         }
-        private Signup1 f3;
-        private void bunifuCustomLabel5_Click(object sender, EventArgs e)
-        {
-            f3 = new Signup1();
-            f3.Show();
-            this.Hide();
-            
-        }
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ForgetPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private HomeForm f2;
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            f2 = new HomeForm();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void LoginClose_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void LoginHide_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private SingupInformation f3;
+        private void SinUpButton_Click(object sender, EventArgs e)
+        {
+            SingupInformation f3 = new SingupInformation();
+            this.Hide();
+            f3.Show();
+            
         }
     }
 }

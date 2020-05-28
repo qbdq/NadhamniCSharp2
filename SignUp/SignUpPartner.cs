@@ -39,5 +39,32 @@ namespace NadhamniCSharp
         {
 
         }
+        private SingupInformation f2;
+        private void Partner_Cancel_Click(object sender, EventArgs e)
+        {
+            SingupInformation f1 = new SingupInformation();
+            this.Hide();
+            f1.Show();
+
+        }
+
+        private void SignUp_ImportImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog of = new OpenFileDialog();
+            of.InitialDirectory = "c:\\";
+            of.Title = "Choose a picture";
+            of.Filter = "JPG & PNG images|*.png;*.jpg";
+            if (of.ShowDialog() == DialogResult.OK)
+            {
+                Partner_Picture.Image = Image.FromFile(of.FileName);
+
+            }
+        }
+
+        private void SignUp_Close_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are You sure to exit application?", "Exit Application", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }
